@@ -1,0 +1,20 @@
+mat-card{
+    padding: 0px 0px 0px 0px !important;
+    
+    mat-card-content{
+        padding: 10px 24px 10px 24px !important;
+    }
+}
+.card-header{
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 8px 16px;
+    height: 40px;
+    color: rgba(0, 0, 0, .54);
+    background:  rgba(0, 0, 0, .03);
+}
+.card-header-title{
+    flex: 1 1 auto;
+}

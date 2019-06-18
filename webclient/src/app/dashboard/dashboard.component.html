@@ -1,0 +1,73 @@
+<!-- <div class="icon">
+    <i class="material-icons">visibility</i>
+</div> -->
+
+
+<div class="main-div">
+  <mat-card>
+    <div id="card" class="card-header">
+      <div class="card-header-title">Welcome to Employee Portal</div>
+    </div>
+    <mat-card-content fxLayout="column">
+
+      <mat-tab-group dynamicHeight>
+        <mat-tab label="Register">
+          <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+            <mat-form-field color="accent" fxFlex fxFlex.lt-md="1 1 auto">
+              <input matInput placeholder="First Name" maxLength="10" id="firstName" name="firstName" required>
+            </mat-form-field>
+          </div>
+          <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+            <mat-form-field color="accent" fxFlex fxFlex.lt-md="1 1 auto">
+              <input matInput placeholder="Last Name" maxLength="10" id="lastName" name="lastName" required>
+            </mat-form-field>
+          </div>
+          <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+            <mat-form-field>
+              <mat-label>Gender</mat-label>
+              <mat-select [formControl]="gender" placeholder="Gender" id="gender" name="gender" required>
+                <mat-option *ngFor="let gender of genderOptions" [value]="gender">
+                  {{gender}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+            <mat-form-field>
+              <input matInput [matDatepicker]="picker" placeholder="Choose a date" required>
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+          </div>
+          <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+            <mat-form-field color="accent" fxFlex fxFlex.lt-md="1 1 auto">
+              <input matInput placeholder="Department" id="department" name="department" required>
+            </mat-form-field>
+          </div>
+          <mat-card-actions>
+          </mat-card-actions>
+        </mat-tab>
+
+        <mat-tab label="Login"> 
+        <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+            <mat-form-field color="accent" fxFlex fxFlex.lt-md="1 1 auto">
+              <input matInput placeholder="Username" maxLength="10" id="Username" name="Username" required>
+            </mat-form-field>
+          </div>
+          <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+            <mat-form-field color="accent" fxFlex fxFlex.lt-md="1 1 auto">
+              <input matInput placeholder="Password" maxLength="10" id="Password" name="Password" required>
+              <mat-hint>Password is DOB</mat-hint>
+
+            </mat-form-field>
+          </div>  
+        
+        
+        </mat-tab>
+      </mat-tab-group>
+
+    </mat-card-content>
+
+  </mat-card>
+
+</div>
